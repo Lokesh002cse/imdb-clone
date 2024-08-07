@@ -11,8 +11,10 @@ function Detail() {
     }
 
     return (
-        <div className="detail">
-            <p>{movie.description}</p>
+        <div className="detail-page">  {/* Changed className to match CSS */}
+            <h1>{movie.name}</h1>
+            <img src={movie.image} alt={movie.name} />
+            <p className="description">{movie.description}</p>
         </div>
     );
 }

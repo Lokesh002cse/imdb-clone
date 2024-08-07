@@ -82,8 +82,9 @@ body {
   padding: 20px;
   max-width: 800px;
   margin: auto;
-  background-color: #ffffff;  /* White background color for the detail page */
-  color: #000000;  /* Black text color for the detail page */
+  background-color: #1E1E1E;  /* Dark background color for the detail page */
+  color: #ffffff;  /* White text color for the detail page */
+  border-radius: 8px;  /* Rounded corners for the detail page container */
 }
 
 .detail-page h1 {
@@ -97,7 +98,7 @@ body {
   margin-bottom: 20px;
 }
 
-.detail-page p {
+.detail-page p.description {
   font-size: 16px;
   line-height: 1.5;
 }
