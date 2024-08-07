@@ -89,7 +89,7 @@ body {
   color: #000000;  /* Black text color for the detail page */
 }
 
-.detail-page h1 {
+.detail-title {
   font-size: 36px;
   margin-bottom: 20px;
 }
