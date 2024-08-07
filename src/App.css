@@ -31,7 +31,7 @@ body {
   border-radius: 8px;
   margin: 10px;
   padding: 10px;
-  width: 300px;  /* Fixed width for the movie cards */
+  width: 100%;  /* Full width for the movie cards */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -58,7 +58,7 @@ body {
   flex: 1;
 }
 
-.movie-card h2 {
+.movie-card h2 { /* Changed from h1 to h2 for better hierarchy */
   font-size: 18px;
   margin: 0 0 10px 0;
 }
@@ -74,6 +74,31 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Detail page styles */
+.detail-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;  /* White background color for the detail page */
+  color: #000000;  /* Black text color for the detail page */
+}
+
+.detail-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.detail-page img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.detail-page p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* Pagination styles */
