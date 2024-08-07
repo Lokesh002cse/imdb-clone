@@ -33,7 +33,7 @@ function Home() {
             <Helmet>
                 <title>Home - Movie App</title>
             </Helmet>
-            <h1 className="home-title">Welcome to the Movie App</h1> {/* Title above movie list */}
+            <h1 className="home-title">HOME PAGE</h1> {/* Title above movie list */}
             {movies.map((movie) => (
                 <div
                     className="movie-card"
