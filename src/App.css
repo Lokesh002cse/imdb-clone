@@ -1,8 +1,8 @@
 /* General styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;  /* Light background color for the whole page */
-  color: #000;  /* Black text color */
+  background-color: #000;  /* Black background color for the whole page */
+  color: #fff;  /* White text color */
   margin: 0;
   padding: 0;
 }
@@ -13,7 +13,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
-  background-color: #f4f4f4;  /* Light background color for the homepage container */
+  background-color: #000;  /* Black background color for the homepage container */
 }
 
 .movie-card {
@@ -22,8 +22,9 @@ body {
   border-radius: 8px;
   margin: 10px;
   padding: 10px;
-  width: 200px;
-  text-align: center;
+  width: 100%;  /* Full width for the movie cards */
+  display: flex;
+  align-items: center;
   cursor: pointer;
   transition: transform 0.2s;
   color: #FFFFFF;  /* White text color for the movie cards */
@@ -34,17 +35,29 @@ body {
 }
 
 .movie-card img {
-  width: 100%;
+  width: 100px;  /* Fixed width for the image */
+  height: auto;
   border-radius: 8px;
+  margin-right: 20px;  /* Space between the image and text */
+}
+
+.movie-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .movie-card h1 {
   font-size: 18px;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
 }
 
 .movie-card p {
   font-size: 14px;
+  margin: 0;
+  background-color: #333;  /* Dark background for the description box */
+  padding: 10px;
+  border-radius: 8px;
 }
 
 /* Detail page styles */
