@@ -16,7 +16,7 @@ function Detail() {
             <Helmet>
                 <title>{movie.name} - Movie App</title>
             </Helmet>
-            <h1 className="DETAILS PAGE">{movie.name}</h1> {/* Added title */}
+            <h1 className="detail-title">{movie.name}</h1> {/* Corrected title class */}
             <img src={movie.image} alt={movie.name} />
             <p className="description">{movie.description}</p>
         </div>
