@@ -61,7 +61,7 @@ function Home() {
                     <img src={movie.image} alt={movie.name} />
                     <div className="movie-card-content">
                         <h2>{movie.name}</h2>
-                        <p>{movie.description}</p>
+                        <p className="description">{movie.description}</p>
                         <p>Rating: {movie.rating}</p>
                     </div>
                 </div>
