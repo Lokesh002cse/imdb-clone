@@ -1,7 +1,7 @@
 /* General styles */
 body {
   font-family: Arial, sans-serif;
-  background-image: url('/images/movie1.jpg');  /* Path to the image in the public folder */
+  background-image: url('/images/movie1.jpg');  /* Update with your background image path */
   background-size: cover;  /* Cover the entire page with the image */
   background-position: center;  /* Center the image */
   background-repeat: no-repeat;  /* Do not repeat the image */
@@ -35,6 +35,7 @@ body {
   margin: 10px;
   padding: 10px;
   width: 100%;  /* Full width for the movie cards */
+  max-width: 300px;  /* Maximum width for the movie cards */
   display: flex;
   align-items: center;
   cursor: pointer;
