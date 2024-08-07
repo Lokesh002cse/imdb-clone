@@ -1,7 +1,7 @@
 /* General styles */
 body {
   font-family: Arial, sans-serif;
-  background-image: url('/images/movie1.jpg');  /* Update with your background image path */
+  background-image: url('/images/movie1.jpg');  /* Path to the image in the public folder */
   background-size: cover;  /* Cover the entire page with the image */
   background-position: center;  /* Center the image */
   background-repeat: no-repeat;  /* Do not repeat the image */
@@ -35,7 +35,6 @@ body {
   margin: 10px;
   padding: 10px;
   width: 100%;  /* Full width for the movie cards */
-  max-width: 300px;  /* Maximum width for the movie cards */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -137,4 +136,34 @@ body {
   align-self: center;
   color: #fff;
   font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .movie-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .movie-card img {
+    width: 80px;  /* Adjust image size for smaller screens */
+  }
+  
+  .homepage {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 20px;
+  }
+  
+  .movie-card h2 {
+    font-size: 16px;
+  }
+  
+  .movie-card p.description {
+    font-size: 12px;
+  }
 }
