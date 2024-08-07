@@ -70,10 +70,11 @@ body {
   padding: 10px;
   border-radius: 8px;
   display: -webkit-box;
-  -webkit-line-clamp: 2;  /* Limit text to 2 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.5em;  /* Adjust line-height to control the number of lines */
+  max-height: 3em;  /* Limit height to accommodate 2 lines of text */
 }
 
 /* Detail page styles */
