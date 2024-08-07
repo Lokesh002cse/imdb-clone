@@ -29,10 +29,11 @@ function Home() {
     ];
 
     return (
-        <div className="home">
+        <div className="home"> {/* Changed class name to match CSS */}
             <Helmet>
                 <title>Home - Movie App</title>
             </Helmet>
+            <h1 className="home-title">Welcome to the Movie App</h1> {/* Title above movie list */}
             {movies.map((movie) => (
                 <div
                     className="movie-card"
@@ -41,7 +42,7 @@ function Home() {
                 >
                     <img src={movie.image} alt={movie.name} />
                     <div className="movie-card-content">
-                        <h1>{movie.name}</h1>
+                        <h2>{movie.name}</h2>
                         <p>{movie.description}</p>
                         <p>Rating: {movie.rating}</p>
                     </div>

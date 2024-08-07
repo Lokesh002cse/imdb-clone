@@ -16,6 +16,15 @@ body {
   background-color: #000;  /* Black background color for the homepage container */
 }
 
+/* Title style for homepage */
+.home-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;  /* White text color for the title */
+  margin-bottom: 20px;  /* Space below the title */
+}
+
+/* Movie card styles */
 .movie-card {
   background-color: #1E1E1E;  /* Dark background color for the movie cards */
   border: 1px solid #333;
@@ -47,7 +56,7 @@ body {
   justify-content: center;
 }
 
-.movie-card h1 {
+.movie-card h2 { /* Changed from h1 to h2 for better hierarchy */
   font-size: 18px;
   margin: 0 0 10px 0;
 }
