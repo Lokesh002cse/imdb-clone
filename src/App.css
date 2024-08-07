@@ -1,0 +1,73 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;  /* Light background color for the whole page */
+  color: #000;  /* Black text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Homepage styles */
+.homepage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f4f4;  /* Light background color for the homepage container */
+}
+
+.movie-card {
+  background-color: #1E1E1E;  /* Dark background color for the movie cards */
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  color: #FFFFFF;  /* White text color for the movie cards */
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card h1 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.movie-card p {
+  font-size: 14px;
+}
+
+/* Detail page styles */
+.detail-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;  /* White background color for the detail page */
+  color: #000000;  /* Black text color for the detail page */
+}
+
+.detail-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.detail-page img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.detail-page p {
+  font-size: 16px;
+  line-height: 1.5;
+}
