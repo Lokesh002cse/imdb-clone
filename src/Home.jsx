@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
 
@@ -77,8 +77,12 @@ function Home() {
         }
     ];
 
+    useEffect(() => {
+        document.title = "Home - Movie App"; // Set the title for the Home page
+    }, []);
+
     return (
-        <div className="homepage">
+        <div className="home">
             {movies.map((movie) => (
                 <div
                     className="movie-card"

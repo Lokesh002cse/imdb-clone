@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './App.css';
 
-function DetailPage() {
+function Detail() {
     const location = useLocation();
     const { movie } = location.state || {};
 
@@ -11,10 +11,10 @@ function DetailPage() {
     }
 
     return (
-        <div className="detail-page">
+        <div className="detail">
             <p>{movie.description}</p>
         </div>
     );
 }
 
-export default DetailPage;
+export default Detail;
