@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './App.css';
 
 function Home() {
     const navigate = useNavigate();
+    const [currentPage, setCurrentPage] = useState(1);
+    const moviesPerPage = 10;
+
     const movies = [
         { id: 1, name: "The Shawshank Redemption", description: "Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.", rating: "5", image: "path/to/image1.jpg" },
         { id: 2, name: "The Godfather", description: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.", rating: "5", image: "path/to/image2.jpg" },
@@ -28,13 +31,25 @@ function Home() {
         { id: 20, name: "The Usual Suspects", description: "A sole survivor tells the twisting tale of an all-star cast of criminals and the infamous Keyser Söze.", rating: "5", image: "path/to/image20.jpg" }
     ];
 
+    const indexOfLastMovie = currentPage * moviesPerPage;
+    const indexOfFirstMovie = indexOfLastMovie - moviesPerPage;
+    const currentMovies = movies.slice(indexOfFirstMovie, indexOfLastMovie);
+
+    const totalPages = Math.ceil(movies.length / moviesPerPage);
+
+    const handlePageChange = (pageNumber) => {
+        if (pageNumber >= 1 && pageNumber <= totalPages) {
+            setCurrentPage(pageNumber);
+        }
+    };
+
     return (
-        <div className="home"> {/* Changed class name to match CSS */}
+        <div className="home">
             <Helmet>
                 <title>Home - Movie App</title>
             </Helmet>
-            <h1 className="home-title">HOME PAGE</h1> {/* Title above movie list */}
-            {movies.map((movie) => (
+            <h1 className="home-title">HOME PAGE</h1>
+            {currentMovies.map((movie) => (
                 <div
                     className="movie-card"
                     key={movie.id}
@@ -48,6 +63,21 @@ function Home() {
                     </div>
                 </div>
             ))}
+            <div className="pagination">
+                <button 
+                    onClick={() => handlePageChange(currentPage - 1)} 
+                    disabled={currentPage === 1}
+                >
+                    Previous
+                </button>
+                <span>Page {currentPage} of {totalPages}</span>
+                <button 
+                    onClick={() => handlePageChange(currentPage + 1)} 
+                    disabled={currentPage === totalPages}
+                >
+                    Next
+                </button>
+            </div>
         </div>
     );
 }
