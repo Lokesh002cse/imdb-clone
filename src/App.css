@@ -1,7 +1,10 @@
 /* General styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #000;  /* Black background color for the whole page */
+  background-image: url('/images/movie-background-collage.jpg');  /* Path to the image in the public folder */
+  background-size: cover;  /* Cover the entire page with the image */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat;  /* Do not repeat the image */
   color: #fff;  /* White text color */
   margin: 0;
   padding: 0;
@@ -13,7 +16,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
-  background-color: #000;  /* Black background color for the homepage container */
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for the homepage container */
 }
 
 /* Title style for homepage */
@@ -58,7 +61,7 @@ body {
   flex: 1;
 }
 
-.movie-card h2 { /* Changed from h1 to h2 for better hierarchy */
+.movie-card h2 {
   font-size: 18px;
   margin: 0 0 10px 0;
 }
@@ -82,9 +85,8 @@ body {
   padding: 20px;
   max-width: 800px;
   margin: auto;
-  background-color: #1E1E1E;  /* Dark background color for the detail page */
-  color: #ffffff;  /* White text color for the detail page */
-  border-radius: 8px;  /* Rounded corners for the detail page container */
+  background-color: #ffffff;  /* White background color for the detail page */
+  color: #000000;  /* Black text color for the detail page */
 }
 
 .detail-page h1 {
@@ -98,7 +100,7 @@ body {
   margin-bottom: 20px;
 }
 
-.detail-page p.description {
+.detail-page p {
   font-size: 16px;
   line-height: 1.5;
 }
