@@ -6,10 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; // Import your CSS file
 import StarRatings from 'react-star-ratings'; // Import the StarRatings component
 
+
 function Home() {
     const navigate = useNavigate();
     const movies = [
-        { id: 1, name: "The Shawshank Redemption", description: "Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.", rating: 5 },
+        { id: 1, name: "The Shawshank Redemption", description: "Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.", rating: 5,image: "./public/images/shawshank.jpg"  },
         { id: 2, name: "The Godfather", description: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.", rating: 5 },
         { id: 3, name: "The Dark Knight", description: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.", rating: 5 },
         { id: 4, name: "12 Angry Men", description: "The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.", rating: 5 },
@@ -52,9 +53,8 @@ function Home() {
             <Navbar bg="dark" variant="dark" expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">
-                        <img
-                            src="/images/logo.png" // Updated path
-                            alt="Logo"
+                        <img src="./public/images/cinema.jpg" // Corrected path to the image
+                            alt=" "
                             className="navbar-logo"
                         />
                     </Navbar.Brand>
@@ -85,7 +85,7 @@ function Home() {
                             <Card className="movie-card" onClick={() => navigate("/detail", { state: { movie } })}>
                                 <Row noGutters>
                                     <Col md={4}>
-                                        <Card.Img className="movie-image" src={ " "} alt={movie.name} />
+                                        <Card.Img className="movie-image" src={ "./images/shawshank.jpg "} alt={movie.name} />
                                     </Col>
                                     <Col md={8}>
                                         <Card.Body>
