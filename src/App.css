@@ -80,6 +80,12 @@ body {
   max-height: 3em;  /* Limit height to accommodate 2 lines of text */
 }
 
+/* Shawshank Redemption specific styles */
+.movie-card[data-movie-id="1"] {
+  background-color: #2E2E2E;  /* Slightly different background color */
+  border: 1px solid #444;  /* Slightly different border color */
+}
+
 /* Detail page styles */
 .detail-page {
   padding: 20px;
