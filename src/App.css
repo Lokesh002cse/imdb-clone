@@ -1,147 +1,112 @@
 /* General styles */
 body {
-  font-family: Arial, sans-serif;
-  background-image: url('/images/movie1.jpg');  /* Path to the image in the public folder */
-  background-size: cover;  /* Cover the entire page with the image */
-  background-position: center;  /* Center the image */
-  background-repeat: no-repeat;  /* Do not repeat the image */
-  color: #fff;  /* White text color */
+  font-family: Georgia, serif;
+  background-image: url('/images/movies2.jpg'); /* Adjust this path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
 
-/* Homepage styles */
-.homepage {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for the homepage container */
+/* Navbar styles */
+.navbar {
+  margin-bottom: 2rem;
 }
 
-/* Title style for homepage */
-.home-title {
-  text-align: center;
-  font-size: 24px;  /* Increased font size for better visibility */
-  color: #fff;  /* White text color for the title */
-  margin-bottom: 20px;  /* Space below the title */
+.navbar-logo {
+  height: 40px; /* Adjust logo height as needed */
 }
 
-/* Movie card styles */
+.navbar-nav .nav-link {
+  color: #fff !important; /* Navbar link color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ddd !important; /* Navbar link hover color */
+}
+
+.navbar-nav .nav-dropdown-menu {
+  background-color: #343a40; /* Navbar dropdown background color */
+}
+
+.navbar-nav .nav-dropdown-item {
+  color: #fff; /* Dropdown item color */
+}
+
+.navbar-nav .nav-dropdown-item:hover {
+  background-color: #495057; /* Dropdown item hover background color */
+}
+
+/* Custom styles for movie cards */
 .movie-card {
-  background-color: #1E1E1E;  /* Dark background color for the movie cards */
-  border: 1px solid #333;
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-  width: 100%;  /* Full width for the movie cards */
+  cursor: pointer;
   display: flex;
   align-items: center;
-  cursor: pointer;
+  padding: 0.5rem; /* Adjusted padding for better spacing */
+  background: white; /* White background for better readability */
+  border-radius: 8px; /* Rounded corners */
   transition: transform 0.2s;
-  color: #FFFFFF;  /* White text color for the movie cards */
-  box-sizing: border-box;
+  margin-bottom: 1rem; /* Space between movie cards */
 }
 
 .movie-card:hover {
   transform: scale(1.05);
 }
 
-.movie-card img {
-  width: 100px;  /* Fixed width for the image */
-  height: auto;
-  border-radius: 8px;
-  margin-right: 20px;  /* Space between the image and text */
+.movie-image {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  width: 150px; /* Image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for image */
 }
 
-.movie-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
+.movie-content {
+  flex-grow: 1; /* Allow the content to take up the remaining space */
+  margin-left: 0.75rem; /* Space between the image and content */
 }
 
-.movie-card h2 {
-  font-size: 18px;
-  margin: 0 0 10px 0;
+.movie-content h5 {
+  margin-top: 0;
 }
 
-.movie-card p.description {
-  font-size: 14px;
+.movie-content p {
   margin: 0;
-  background-color: #333;  /* Dark background for the description box */
-  padding: 10px;
-  border-radius: 8px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.5em;  /* Adjust line-height to control the number of lines */
-  max-height: 3em;  /* Limit height to accommodate 2 lines of text */
 }
 
-/* Shawshank Redemption specific styles */
-.movie-card[data-movie-id="1"] {
-  background-color: #2E2E2E;  /* Slightly different background color */
-  border: 1px solid #444;  /* Slightly different border color */
+.movie-content p + p {
+  margin-top: 0.5rem; /* Space between description and rating */
 }
 
 /* Detail page styles */
-.detail-page {
-  padding: 20px;
+.detail-container {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+  border-radius: 8px; /* Rounded corners */
+  color: black; /* Text color */
   max-width: 800px;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.9);  /* Slightly transparent white for contrast */
-  color: #000000;  /* Black text color for the detail page */
+  margin: 2rem auto; /* Center the container */
 }
 
-.detail-title {
-  font-size: 36px;  /* Adjusted size for prominence */
-  margin-bottom: 20px;
+.detail-container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem; /* Adjusted font size */
+  color: #333; /* Darker text color */
 }
 
-.detail-page img {
-  width: 100%;
+.detail-container img {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
-.detail-page p {
-  font-size: 16px;
+.detail-container p {
+  font-size: 1rem; /* Adjusted font size */
   line-height: 1.5;
-}
-
-/* Pagination styles */
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 10px;
-}
-
-.pagination button {
-  background-color: #1E1E1E;
-  border: 1px solid #333;
-  color: #fff;
-  border-radius: 4px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.pagination button:hover {
-  background-color: #333;
-}
-
-.pagination button:disabled {
-  cursor: not-allowed;
-  background-color: #666;
-}
-
-.pagination span {
-  align-self: center;
-  color: #fff;
-  font-size: 14px;
+  margin-bottom: 1rem;
+  color: #555; /* Softer text color */
 }
 
 /* Responsive Styles */
@@ -149,27 +114,68 @@ body {
   .movie-card {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0.5rem; /* Adjust padding for smaller screens */
   }
 
-  .movie-card img {
-    width: 80px;  /* Adjust image size for smaller screens */
+  .movie-image {
+    width: 100%; /* Ensure image fits container */
+    height: auto;
+    margin-bottom: 0.5rem; /* Space between image and content */
   }
-  
-  .homepage {
-    padding: 10px;
+
+  .movie-content {
+    margin-left: 0; /* Remove margin on smaller screens */
+  }
+
+  .movie-content h5 {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .movie-content p {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .detail-container {
+    padding: 1rem; /* Adjust padding for smaller screens */
+    margin: 1rem auto; /* Adjust margin for smaller screens */
+  }
+
+  .detail-container h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .detail-container p {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 }
 
-@media (max-width: 480px) {
-  .home-title {
-    font-size: 20px;
-  }
-  
-  .movie-card h2 {
-    font-size: 16px;
-  }
-  
-  .movie-card p.description {
-    font-size: 12px;
-  }
+/* Pagination Button Styling */
+.pagination-button {
+  margin: 0 0.25rem; /* Space between pagination buttons */
+}
+
+.pagination-button.active {
+  background-color: #6c757d; /* Active button color */
+  color: white;
+}
+
+.pagination-button:hover {
+  background-color: #5a6268; /* Hover state for pagination buttons */
+}
+
+/* Optional: Styling for card images to ensure they fit within their container */
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Rating Alignment */
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between text and stars */
+}
+
+.rating-stars {
+  display: flex;
 }
