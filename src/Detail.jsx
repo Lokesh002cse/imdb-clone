@@ -18,7 +18,7 @@ function Detail() {
                 <title>{movie.name} - Movie App</title>
             </Helmet>
             <h1 className="mb-4">{movie.name}</h1>
-            <img src={movie.image} alt={movie.name} className="img-fluid mb-4" />
+            <img src={"./images/shawshank.jpg "} alt={movie.name} className="img-fluid mb-4" />
             <p>{movie.description}</p>
             <p className="rating">Rating: {movie.rating}</p>
         </Container>
