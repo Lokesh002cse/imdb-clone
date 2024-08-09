@@ -1,7 +1,7 @@
 /* General styles */
 body {
   font-family: Georgia, serif;
-  background-image: url('/images/movies2.jpg'); /* Adjust this path as needed */
+  background-image: url('/images/bg.jpg'); /* Ensure this path is correct */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,12 +12,22 @@ body {
 
 /* Navbar styles */
 .navbar {
+  background: transparent; /* Makes the navbar transparent */
+  margin-top: 0.5rem;
   margin-bottom: 2rem;
-  background-color: #337457; /* Dark blue background color */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 10px 12px; 
+  background-size: cover;
+  border-radius: 24px; /* Keeps rounded corners */
 }
 
+
+
 .navbar-logo {
-  height: 40px; /* Adjust logo height as needed */
+max-height: 40px; /* Adjust as needed to fit the navbar */
+margin-left: 1%;
+
 }
 
 .navbar-nav .nav-link {
@@ -45,15 +55,12 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  padding: 0.5rem; /* Adjusted padding for better spacing */
-  background: white; /* White background for better readability */
-  border-radius: 8px; /* Rounded corners */
+  padding: 1rem;
+  background: rgba(128, 128, 128, 0.5); /* Semi-transparent grey background */
+  border-radius: 10px; /* Rounded corners */
   transition: transform 0.2s;
   margin-bottom: 1rem; /* Space between movie cards */
-}
-
-.movie-card:hover {
-  transform: scale(1.05);
+  flex-direction: row; /* Content laid out in a row */
 }
 
 .movie-image {
@@ -61,23 +68,41 @@ body {
   width: 150px; /* Image width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px; /* Rounded corners for image */
+  margin-right: 1rem; /* Space between image and content */
 }
 
 .movie-content {
-  flex-grow: 1; /* Allow the content to take up the remaining space */
-  margin-left: 0.75rem; /* Space between the image and content */
+  padding: 1rem;
+  font-size: 16px; /* Adjust font size for better readability */
+  flex-grow: 1; /* Allow content to take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between title and description/rating */
 }
 
 .movie-content h5 {
   margin-top: 0;
+  margin-bottom: 0.5rem; /* Space between title and description */
 }
 
-.movie-content p {
-  margin: 0;
+.movie-description {
+  margin-bottom: 0.5rem; /* Space between description and rating */
 }
 
-.movie-content p + p {
-  margin-top: 0.5rem; /* Space between description and rating */
+.movie-rating {
+  display: flex;
+  align-items: center; /* Center stars vertically */
+  color: white; /* Ensure rating text is readable */
+}
+
+
+.rating-stars {
+  display: flex;
+  margin-left: 0.5rem; /* Space between text and stars */
+}
+
+.rating-text {
+  margin-right: 0.5rem; /* Space between text and stars */
 }
 
 /* Detail page styles */
@@ -132,7 +157,8 @@ body {
     font-size: 1.2rem; /* Adjust font size for smaller screens */
   }
 
-  .movie-content p {
+  .movie-description,
+  .movie-rating {
     font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 

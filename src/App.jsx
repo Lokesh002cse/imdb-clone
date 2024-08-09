@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Detail from './Detail';
 
-function App() {
+const App = () => {
   return (
-    <Router basename="/imdb-clone">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/detail" element={<Detail />} />
-        {/* Add other routes as needed */}
+        {/* Ensure the route parameter matches the one used in Detail.jsx */}
+        <Route path="/movies/:movieId" element={<Detail />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
