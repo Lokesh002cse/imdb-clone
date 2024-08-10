@@ -1,7 +1,7 @@
 /* General styles */
 body {
   font-family: Georgia, serif;
-  background-image: url('/images/bg.jpg'); /* Ensure this path is correct */
+  background-image: url('/images/bg3.jpg'); /* Ensure this path is correct */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,12 +68,13 @@ margin-left: 1%;
   width: 150px; /* Image width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px; /* Rounded corners for image */
-  margin-right: 1rem; /* Space between image and content */
+  margin-right: 80rem; /* Space between image and content */
 }
 
 .movie-content {
   padding: 1rem;
-  font-size: 16px; /* Adjust font size for better readability */
+  font-size: 90px; /* Adjust font size for better readability */
+  font-weight: 100;
   flex-grow: 1; /* Allow content to take up remaining space */
   display: flex;
   flex-direction: column;

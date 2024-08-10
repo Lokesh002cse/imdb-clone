@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, resources={r"/movies/*": {"origins": "http://localhost:5175"}})
+CORS(app, resources={r"/movies/*": {"origins": "http://localhost:5173"}})
 
 # Configure the PostgreSQL database URI using environment variables
 app.config['SQLALCHEMY_DATABASE_URI'] = (
