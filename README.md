@@ -45,6 +45,7 @@ Werkzeug
 Flask-SQLAlchemy
 SQLAlchemy
 psycopg2-binary
+Flask-Cors
 ```
 
 ### Initialize Database
@@ -54,19 +55,21 @@ DROP TABLE IF EXISTS movies;
 ```
 
 ### Start the Flask application
+
 ```
 python app.py
 ```
+
 The app.py script will handle creating the database table and loading the data from movies.json into the movies table.
 
 The server will be accessible at ``` http://localhost:5000```.
 
 ## Frontend Setup (ReactJS)
 ### Install Dependencies
-Navigate to the frontend/ directory and install the required Node.js packages:
+Navigate to the  directory/folder and install the required Node.js packages:
 ```
-npx create-react-app frontend
-cd frontend
+npx create-react-app 
+cd imdb-clone
 npm install 
 ```
 ### Start the ReactJS Development Server
