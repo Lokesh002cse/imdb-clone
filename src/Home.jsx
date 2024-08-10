@@ -72,7 +72,7 @@ function Home() {
                 <Helmet>
                     <title>Home - Movie App</title>
                 </Helmet>
-                <h1 className="text-center mb-4">HOME PAGE</h1>
+                <h1 className="text-center mb-4">MOVIE HOMEPAGE</h1>
 
                 {loading && <div className="text-center">Loading...</div>}
                 {error && <div className="text-center text-danger">{error}</div>}

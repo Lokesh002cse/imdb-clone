@@ -6,8 +6,8 @@
       "director": "Christopher Nolan",
       "rating": 8.8,
       "short_description": "A mind-bending thriller.",
-      "long_description": "A thief who enters the dreams of others is given the chance to have his past crimes forgiven, provided he can successfully implant an idea into a target's subconscious.",
-      "image_path": "images/inception.jpeg"
+      "long_description": "Inception (2010), directed by Christopher Nolan, is a visually stunning sci-fi thriller exploring the nature of dreams and reality. Dom Cobb (Leonardo DiCaprio) is a skilled thief who enters people's dreams to steal valuable secrets. Cobb is given a chance to erase his criminal past if he can successfully perform an inception—planting an idea into someone's subconscious. As he and his team navigate the labyrinth of dreams within dreams, they encounter escalating dangers and confront Cobb’s own unresolved issues. The film intricately weaves action, psychological depth, and innovative visuals, leaving audiences questioning the boundaries between reality and illusion.",
+      "image_path": "images/inception.jpg"
     },
     {
       "title": "The Dark Knight",
@@ -16,7 +16,7 @@
       "director": "Christopher Nolan",
       "rating": 9.0,
       "short_description": "The battle for Gotham.",
-      "long_description": "Batman faces the Joker, a criminal mastermind who wants to plunge Gotham City into anarchy, forcing the superhero to confront his greatest fear.",
+      "long_description": "The Dark Knight (2008), directed by Christopher Nolan, is a critically acclaimed superhero film and the second installment in Nolan's Batman trilogy. The film features Christian Bale as Batman, who faces his most formidable adversary, the Joker, played by Heath Ledger in an iconic performance. The Joker, a chaotic villain with a plan to undermine Gotham City's moral fabric, forces Batman to confront his own principles and the fine line between justice and vigilantism. As the city descends into chaos, Batman grapples with ethical dilemmas and personal sacrifice. The film is renowned for its intense action sequences, complex characters, and a compelling narrative that explores themes of heroism and corruption.",
       "image_path": "images/the_dark_knight.jpg"
     },
     {
@@ -26,7 +26,7 @@
       "director": "Christopher Nolan",
       "rating": 8.6,
       "short_description": "A journey beyond the stars.",
-      "long_description": "A team of explorers travels through a wormhole in space in an attempt to ensure humanity's survival.",
+      "long_description": "Interstellar (2014), directed by Christopher Nolan, is a visually breathtaking and emotionally profound sci-fi epic. The film follows Cooper (Matthew McConaughey), a pilot and engineer who joins a mission through a wormhole near Saturn to find a new habitable planet for humanity. As Earth faces ecological collapse, Cooper and his team confront the challenges of space travel, time dilation, and the human spirit. The narrative intertwines scientific concepts with personal sacrifice and love, while Hans Zimmer’s evocative score enhances the film’s emotional depth. Interstellar explores themes of survival, exploration, and the enduring connection between parents and children.",
       "image_path": "images/interstellar.jpg"
     },
     {
@@ -36,7 +36,7 @@
       "director": "Lana Wachowski, Lilly Wachowski",
       "rating": 8.7,
       "short_description": "Reality is an illusion.",
-      "long_description": "A hacker learns about the true nature of his reality and his role in the war against its controllers.",
+      "long_description": "The Matrix (1999): Directed by the Wachowskis, The Matrix is a groundbreaking sci-fi action film starring Keanu Reeves as Neo, a hacker who discovers that reality as he knows it is a simulated world created by intelligent machines. As he joins a rebellion against the machines, Neo learns to manipulate the matrix's rules and faces profound questions about free will, reality, and human potential. The film is renowned for its innovative visual effects, including the iconic bullet time sequences, and its philosophical depth..",
       "image_path": "images/the_matrix.jpg"
     },
     {
@@ -46,7 +46,7 @@
       "director": "Ridley Scott",
       "rating": 8.5,
       "short_description": "A tale of revenge and honor.",
-      "long_description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "long_description": "Gladiator (2000): Directed by Ridley Scott, Gladiator stars Russell Crowe as Maximus, a betrayed Roman general who becomes a gladiator seeking vengeance against the corrupt emperor Commodus (Joaquin Phoenix). Set in ancient Rome, the film combines epic battles, political intrigue, and personal redemption. With its gripping storyline, impressive set pieces, and a powerful performance by Crowe, Gladiator explores themes of honor, revenge, and the struggle for freedom.",
       "image_path": "images/gladiator.jpg"
     },
     {
@@ -56,7 +56,7 @@
       "director": "Frank Darabont",
       "rating": 9.3,
       "short_description": "Hope can set you free.",
-      "long_description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "long_description": "The Shawshank Redemption (1994): Directed by Frank Darabont and based on a Stephen King novella, The Shawshank Redemption stars Tim Robbins as Andy Dufresne, a banker wrongfully imprisoned for murder. Through his enduring spirit and intelligence, Andy forms an unlikely friendship with fellow inmate Red (Morgan Freeman) and transforms the bleak Shawshank prison from within. The film is celebrated for its powerful storytelling, themes of hope and redemption, and exceptional performances.",
       "image_path": "images/shawshank_redemption.jpg"
     },
     {
@@ -66,7 +66,7 @@
       "director": "Quentin Tarantino",
       "rating": 8.9,
       "short_description": "A tapestry of crime stories.",
-      "long_description": "The lives of two mob hitmen, a boxer, a gangster, and his wife intertwine in four tales of violence and redemption.",
+      "long_description": "Pulp Fiction (1994): Directed by Quentin Tarantino, Pulp Fiction is a highly influential crime film known for its non-linear narrative and sharp dialogue. The film intertwines multiple storylines involving hitmen Vincent Vega (John Travolta) and Jules Winnfield (Samuel L. Jackson), a gangster's wife (Uma Thurman), and a pair of armed robbers. Its eclectic mix of humor, violence, and pop culture references, along with memorable performances, make it a seminal work in modern cinema.",
       "image_path": "images/pulp_fiction.jpg"
     },
     {
@@ -76,7 +76,7 @@
       "director": "Peter Jackson",
       "rating": 8.8,
       "short_description": "The journey begins.",
-      "long_description": "A young hobbit sets out on a quest to destroy a powerful ring with the help of a fellowship of companions.",
+      "long_description": "The Lord of the Rings: The Fellowship of the Ring (2001): Directed by Peter Jackson, this epic fantasy film is the first installment in the Lord of the Rings trilogy, based on J.R.R. Tolkien's novel. The film follows Frodo Baggins (Elijah Wood) and a diverse group of allies as they embark on a quest to destroy the One Ring and thwart the dark lord Sauron. With its expansive world-building, rich storytelling, and stunning visual effects, it sets the stage for an epic saga of adventure and heroism.",
       "image_path": "images/fellowship_of_the_ring.jpg"
     },
     {
@@ -126,7 +126,7 @@
       "director": "James Cameron",
       "rating": 7.8,
       "short_description": "A timeless love story.",
-      "long_description": "A young couple from different social classes fall in love aboard the ill-fated R.M.S. Titanic.",
+      "long_description": "Titanic (1997): Directed by James Cameron, Titanic is an epic romance and disaster film set aboard the ill-fated RMS Titanic. The story follows Jack Dawson (Leonardo DiCaprio) and Rose DeWitt Bukater (Kate Winslet), two passengers from different social backgrounds who fall in love as the ship tragically sinks. The film combines historical events with a sweeping love story, and its groundbreaking visual effects and memorable soundtrack have made it one of the highest-grossing films of all time.",
       "image_path": "images/titanic.jpg"
     },
     {
